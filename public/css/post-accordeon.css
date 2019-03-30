@@ -1,0 +1,41 @@
+.wedo-plugin.owl-carousel .owl-prev, .wedo-plugin.owl-carousel .owl-next {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 70px;
+}
+
+.wedo-plugin.owl-carousel .owl-prev {
+  left: -20px;
+}
+
+.wedo-plugin.owl-carousel .owl-next {
+  right: -20px;
+}
+
+.wedo-plugin.owl-carousel .owl-prev:hover {
+  opacity: 0.7;
+}
+
+.wedo-plugin.owl-carousel .owl-next:hover {
+  opacity: 0.7;
+}
+
+.wedo-date-category {
+  border-bottom: 3px solid #55ACEF;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.wedo-post-title {
+  
+}
+
+.the_post_thumbnail {
+
+}
+
+.wedo-post-excerpt {
+
+}
