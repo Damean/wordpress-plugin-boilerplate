@@ -49,7 +49,8 @@ class Class_Public_Post_Accordeon {
     wp_localize_script( $this->plugin_name . '-post-accordeon-script', $this->plugin_name . '_post_accordeon_obj', array( 'image_path' => plugin_dir_url( __FILE__ ) . 'img/' ) );
 
     extract( shortcode_atts( array(
-      'category_name' => 'news'
+      'category_name' => 'news',
+      'accordeon_identifier' => 'identifier'
     ), $atts ) );
 
     $args = array(

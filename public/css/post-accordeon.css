@@ -1,41 +1,55 @@
-.wedo-plugin.owl-carousel .owl-prev, .wedo-plugin.owl-carousel .owl-next {
-  height: 47px;
-  position: absolute;
-  width: 26px;
-  cursor: pointer;
-  top: 70px;
+.post-accordeon {
+  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+	opacity: 0;
+	box-sizing: border-box;
+	margin-top: 0px!important;
+	margin-bottom: 0px!important;
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+	height: 0px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
-.wedo-plugin.owl-carousel .owl-prev {
-  left: -20px;
+.post-accordeon.show {
+  opacity: 1;
+	padding-top: 30px!important;
+	padding-bottom: 30px!important;
+  height: 500px;
+  overflow-y: scroll;
 }
 
-.wedo-plugin.owl-carousel .owl-next {
-  right: -20px;
+.post-accordeon .post-gradient-button {
+  display: block;
+  float: right;
+  padding: 0px 25px;
+  margin: 20px 0px;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  font-family: 'Dosis',Helvetica,Arial,Lucida,sans-serif;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3705b+0,ef495e+100 */
+  background: #f3705b; /* Old browsers */
+  background: -moz-linear-gradient(left, #f3705b 0%, #ef495e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #f3705b 0%,#ef495e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #f3705b 0%,#ef495e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3705b', endColorstr='#ef495e',GradientType=1 ); /* IE6-9 */
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
 }
 
-.wedo-plugin.owl-carousel .owl-prev:hover {
-  opacity: 0.7;
-}
-
-.wedo-plugin.owl-carousel .owl-next:hover {
-  opacity: 0.7;
-}
-
-.wedo-date-category {
-  border-bottom: 3px solid #55ACEF;
-  margin-bottom: 10px;
-  text-align: right;
-}
-
-.wedo-post-title {
-  
-}
-
-.the_post_thumbnail {
-
-}
-
-.wedo-post-excerpt {
-
+.post-accordeon .post-bottom-line {
+  height: 5px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3705b+0,ef495e+100 */
+  background: #f3705b; /* Old browsers */
+  background: -moz-linear-gradient(left, #f3705b 0%, #ef495e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #f3705b 0%,#ef495e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #f3705b 0%,#ef495e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3705b', endColorstr='#ef495e',GradientType=1 ); /* IE6-9 */
 }
