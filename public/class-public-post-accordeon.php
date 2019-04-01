@@ -37,7 +37,7 @@ class Class_Public_Post_Accordeon {
   /**
    * Usage: [wedo_post_slider category_name="news, projects" posts_per_page=10 ]
    */
-  public function post_accordeon_shortcode( $atts ) {
+  public function post_accordeon_shortcode( $atts, $content = null ) {
 
     wp_enqueue_style('bootstrap4-style');
     wp_enqueue_script('popper');

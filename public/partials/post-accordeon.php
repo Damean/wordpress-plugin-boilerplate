@@ -1,13 +1,21 @@
 <div class="post-accordeon <?php echo $accordeon_identifier; ?>">
+  <?php if ( !empty($content) ) { ?>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <?php echo $content; ?>
+        </div>
+      </div>
+    </div>
+  <?php } ?>
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
     $post_categories = get_the_category();
     $post_classes = "";
     foreach ($post_categories as $cat) {
-      $post_classes .= "" . $cat->name . " ";
+      $post_classes .= "" . $cat->slug . " ";
     }
   ?>
-  <div>
-    <div class="container-fluid <?php echo $post_classes; ?>">
+    <div class="container <?php echo $post_classes; ?>">
       <div class="row">
         <div class="col-12 col-md-4">
           <?php if ( has_post_thumbnail()) : ?>
@@ -25,6 +33,5 @@
         <div class="col-8 post-bottom-line"></div>
       </div>
     </div>
-  </div>
   <?php endwhile; ?>
 </div>
