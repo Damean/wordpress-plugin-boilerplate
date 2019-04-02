@@ -1,4 +1,5 @@
 <div class="post-accordeon <?php echo $accordeon_identifier; ?>">
+  <div class="post-accordeon-top-shadow"></div>
   <?php if ( !empty($content) ) { ?>
     <div class="container">
       <div class="row">
@@ -34,4 +35,5 @@
       </div>
     </div>
   <?php endwhile; ?>
+  <div class="post-accordeon-bottom-shadow"></div>
 </div>

@@ -8,7 +8,27 @@
 	padding-bottom: 0px!important;
 	height: 0px;
   overflow: hidden;
-  box-shadow: inset 0px 20px 15px -10px RGBA(0,0,0,0.3), inset 0px -20px 15px -10px RGBA(0,0,0,0.3);
+  position: relative;
+  color: #255767!important;
+}
+
+.post-accordeon-top-shadow {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  left: 0;
+  width: 100%;
+  box-shadow: inset 0px 20px 15px -10px RGBA(0,0,0,0.3);
+  
+}
+
+.post-accordeon-bottom-shadow {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  left: 0;
+  width: 100%;
+  box-shadow: inset 0px -20px 15px -10px RGBA(0,0,0,0.3);
 }
 
 .post-accordeon .container:before {
