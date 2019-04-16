@@ -24,7 +24,8 @@ class Class_Plugin_Main {
 		require_once plugin_dir_path( __DIR__ ) . 'includes/class-plugin-i18n.php';
     require_once plugin_dir_path( __DIR__ ) . 'admin/class-plugin-admin.php';
     
-		require_once plugin_dir_path( __DIR__ ) . 'public/class-public-post-accordeon.php';
+    require_once plugin_dir_path( __DIR__ ) . 'public/class-public-post-accordeon.php';
+    require_once plugin_dir_path( __DIR__ ) . 'public/class-public-deliverable-accordeon.php';
 
 		$this->loader = new Class_Plugin_Loader( $this->get_version(), $this->get_plugin_name() );
 	}
@@ -55,6 +56,13 @@ class Class_Plugin_Main {
     $this->loader->add_shortcode( $this->plugin_name . "-post-accordeon", $public_post_accordeon, "post_accordeon_shortcode", $priority = 10, $accepted_args = 1 );
 
     $this->loader->add_action( 'after_setup_theme', $public_post_accordeon, 'after_setup_theme' );
+
+    $public_deliverable_accordeon = new Class_Public_Deliverable_Accordeon( $this->get_version(), $this->get_plugin_name() );
+
+    $this->loader->add_action( 'wp_enqueue_scripts', $public_deliverable_accordeon, 'enqueue_styles' );
+    $this->loader->add_action( 'wp_enqueue_scripts', $public_deliverable_accordeon, 'enqueue_scripts' );
+    
+    $this->loader->add_shortcode( $this->plugin_name . "-deliverable-accordeon", $public_deliverable_accordeon, "deliverable_accordeon_shortcode", $priority = 10, $accepted_args = 1 );
 
 	}
 

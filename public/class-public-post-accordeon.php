@@ -30,13 +30,10 @@ class Class_Public_Post_Accordeon {
   public function after_setup_theme() {
 
     //add_image_size( 'homepage-thumb', 220, 180, true ); // (cropped)
-    add_image_size( 'category-thumb', 300 ); // 300 pixels wide (and unlimited height)
+    add_image_size( 'category-thumb', 200 ); // 300 pixels wide (and unlimited height)
     
   }
-
-  /**
-   * Usage: [wedo_post_slider category_name="news, projects" posts_per_page=10 ]
-   */
+  
   public function post_accordeon_shortcode( $atts, $content = null ) {
 
     wp_enqueue_style('bootstrap4-style');

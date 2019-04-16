@@ -36,7 +36,7 @@ register_deactivation_hook( __FILE__, 'plugin_boilerplate_deactivate_plugin' );
 function run_plugin() {
   require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-main.php';
 
-  $version = '1.0.0';
+  $version = '1.1.0';
 	$plugin_name = 'boilerplate';
 
 	$plugin = new Class_Plugin_Main( $version, $plugin_name );
